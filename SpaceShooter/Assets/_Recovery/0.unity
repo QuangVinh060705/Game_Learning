@@ -327,7 +327,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b4a7b00b74666f34590e4af1f89e24a1, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::Blinking
+  m_EditorClassIdentifier: '::'
 --- !u!1 &633716693
 GameObject:
   m_ObjectHideFlags: 0
@@ -339,7 +339,6 @@ GameObject:
   - component: {fileID: 633716695}
   - component: {fileID: 633716694}
   - component: {fileID: 633716696}
-  - component: {fileID: 633716697}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -415,7 +414,7 @@ Transform:
   m_GameObject: {fileID: 633716693}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.99, y: 0.46, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -433,22 +432,7 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8faad65dab11c0d4597cd66bdc403b5d, type: 3}
   m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerMovement
---- !u!114 &633716697
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 633716693}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f36bb360669b0a545b93ce92d3d0abe9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::PlayerShooting
-  bulletPrefabs: {fileID: 8879726537461189743, guid: bbd4d2e98c06235459cee658bd2eb541,
-    type: 3}
-  shootingInterval: 0.1
+  m_EditorClassIdentifier: '::'
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
