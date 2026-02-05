@@ -1,13 +1,16 @@
 using UnityEngine;
-
 public class Bullet : MonoBehaviour
 {
     public float flySpeed;
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Update()
+    public int damage;
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        var enemy = collision.GetComponent<EnemyHealth>();
+        if (enemy != null)
         {
-        var newPosition = transform.position;
-        newPosition.y += Time.deltaTime * flySpeed;
-        transform.position = newPosition;
+            enemy.TakeDamage(damage);
         }
+        Destroy(gameObject);
+    }
 }
