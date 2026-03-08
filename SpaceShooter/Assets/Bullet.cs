@@ -14,4 +14,9 @@ public class Bullet : MonoBehaviour
         }
         Destroy(gameObject);
     }
+
+    private void Update()
+    {
+        transform.Translate(Vector2.right * flySpeed * Time.deltaTime);
+    }
 }
